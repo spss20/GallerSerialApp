@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp">
+
+            <EditText
+                android:id="@+id/target_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target  ip address"
+               />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp">
+
+            <EditText
+                android:id="@+id/subnet_mask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target  subnet mask"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp">
+
+            <EditText
+                android:id="@+id/gateway_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target  Gateway IP address"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp">
+
+            <EditText
+                android:id="@+id/dns_server_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target dns server ip"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp">
+
+            <EditText
+                android:id="@+id/dns_server_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target dns server ip 2"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/submit_command"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="50dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:textSize="18sp"
+            android:text="Submit"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

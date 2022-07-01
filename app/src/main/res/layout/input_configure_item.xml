@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_20dp"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+   <TextView
+       android:id="@+id/input_id"
+       android:layout_width="wrap_content"
+       android:text="Input Id : 0"
+       android:textSize="20sp"
+       android:gravity="end"
+       android:paddingTop="@dimen/dimen_10dp"
+       android:paddingBottom="@dimen/dimen_10dp"
+       android:paddingEnd="@dimen/dimen_20dp"
+       android:fontFamily="@font/muli"
+       android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/input_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/radio_group_bg"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Disabled"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:paddingEnd="@dimen/dimen_15dp"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/radio_color"
+                android:background="@drawable/radio_button_bg"
+                />
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Enabled"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:paddingEnd="@dimen/dimen_15dp"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/radio_color"
+                android:background="@drawable/radio_button_bg"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

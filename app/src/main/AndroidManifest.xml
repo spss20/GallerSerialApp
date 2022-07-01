@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ssoftwares.newgaller">
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".views.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".views.InputStates"></activity>
+        <activity android:name=".views.LogActivity" />
+        <activity
+            android:name=".views.ConnectionActivity"
+            android:theme="@style/AppTheme3"
+            />
+        <activity android:name=".views.UserDetailActivity" />
+        <activity
+            android:name=".views.SplashScreen"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.SetInputConfigurations" />
+        <activity android:name=".ipv6.SetRemoteIpDns" />
+        <activity android:name=".ipv6.SetNtpServer" />
+        <activity android:name=".views.FirmwareUpgrade" />
+        <activity android:name=".ipv6.UpdateIp6" />
+        <activity android:name=".views.EditPreferences" />
+        <activity android:name=".TestLayout">
+
+        </activity>
+        <activity android:name=".ipv4.ResetTarget" />
+        <activity android:name=".ipv4.SetNtp" />
+        <activity android:name=".ipv4.SetRtc" />
+        <activity android:name=".ipv4.SetRemoteServer" />
+        <activity android:name=".ipv4.UpdateIp" />
+        <activity
+            android:name=".views.MainActivity"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity android:name=".views.CommandActivity">
+
+        </activity>
+
+        <service
+            android:name=".UsbService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

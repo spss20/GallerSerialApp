@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_20dp"
+    android:paddingStart="@dimen/dimen_20dp"
+    android:paddingEnd="@dimen/dimen_20dp"
+    android:paddingBottom="@dimen/dimen_20dp"
+    tools:context=".ipv6.UpdateIp6">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/remote_ip_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remote IP 1"
+            android:fontFamily="@font/muli"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/remote_ip_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remote IP 2"
+            android:fontFamily="@font/muli"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/remote_ip_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remote IP 3"
+            android:fontFamily="@font/muli"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40dp"
+        android:text="Update"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingEnd="@dimen/dimen_10dp"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        />
+</LinearLayout>

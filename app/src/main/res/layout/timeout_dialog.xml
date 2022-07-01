@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Connection Timeout Seconds"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:fontFamily="@font/muli_semibold"
+        android:textColor="@color/textBlack"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:hint="Connection Timout (seconds)"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

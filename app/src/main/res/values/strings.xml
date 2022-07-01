@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Galler Serial Communication</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="serial_port">Synchronous Serial Port</string>
+    <string name="firmware_upgrade_warning">Warning: If your phone is hanged after picking the file, to prevent it, firsty  diconnect the controller , pick the firmware file then , and connect the controller again.</string>
+    <string name="open_nav">open</string>
+    <string name="close_nav">close</string>
+    <string name="not_connected">No USB connected</string>
+    <string name="not_connected_2">Plug usb into mobile to continue</string>
+    <string name="incorrect_password">Incorrect Password. Please contact target machine manufacturer.</string>
+</resources>
